@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav a:hover {
+  color: #e67e22;
+  font-size: 18px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #34495e;
+  padding: 0.5rem 0;
+  min-width: 150px;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #2c3e50;
+  color: #e67e22;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #e67e22;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #cf711f;
+}
+.recipes h1{
+    align-items:center;
+    color:black;
+    font-size:20px;
+    justify-content:space-between;
+    margin-top:90px;
+}
+/* recipes*/
+.recipes {
+  background: linear-gradient(to bottom left, #ffe6e6, #fff3e0);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.recipes .heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.recipes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipes .box {
+  background: linear-gradient(to bottom left, #fa7fd3, #fe8dda, #fc5dca);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.recipes .box:hover {
+  transform: scale(1.03);
+}
+
+.recipes .box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.recipes .box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.recipes .btn {
+  background: #fff;
+  color: #e67e22;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.recipes .btn:hover {
+  background: #e67e22;
+  color: white;
+}
+
+.Contactus {
+  background: linear-gradient(to bottom right, #fdf2e9, #fde2e2);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.Contactus .heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.Contactus .heading span {
+  color: #e67e22;
+}
+
+.Contactus form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffffcc;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contactus form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Contactus form .inputBox input {
+  flex: 1 1 48%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  color: black;
+  text-transform: none;
+}
+
+.Contactus form textarea {
+  width: 100%;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 10px;
+  font-size: 1rem;
+  color: black;
+  text-transform: none;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-top: 1rem;
+}
+
+.Contactus form input::placeholder,
+.Contactus form textarea::placeholder {
+  color: #555;
+  text-transform: capitalize;
+}
+
+.Contactus form input:focus,
+.Contactus form textarea:focus {
+  background: #fff3e0;
+  outline: 2px solid #e67e22;
+}
+
+.Contactus .btn {
+  margin-top: 1rem;
+  background: #e67e22;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Contactus .btn:hover {
+  background: #d35400;
+}
+
+
+
+.about-section {
+  background: linear-gradient(to bottom right, #fdf2e9, #fde2e2);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-section .about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffffcc;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer .social-links {
+  margin: 1rem 0;
+}
+
+.footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #e67e22;
+}
+
+
+/* Responsive Design */
+/* ================================
+   Responsive Design Enhancements
+   ================================ */
+@media (max-width: 1024px) {
+  html {
+    font-size: 58%;
+  }
+
+  .recipes .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .about-section .about-container,
+  .Contactus form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav a {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  /* Recipes */
+  .recipes .box-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .recipes .box {
+    padding: 1.5rem;
+  }
+
+  .recipes .box img {
+    height: 160px;
+  }
+
+  /* Contact */
+  .Contactus form .inputBox {
+    flex-direction: column;
+  }
+
+  .Contactus form .inputBox input {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .Contactus form textarea {
+    font-size: 1rem;
+  }
+
+  .Contactus .btn {
+    width: 100%;
+  }
+
+  /* About */
+  .about-section .about-container {
+    padding: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .recipes .box h2 {
+    font-size: 1.4rem;
+  }
+
+  .recipes .btn {
+    padding: 0.6rem 1rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .footer .social-links {
+    flex-direction: column;
+  }
+
+  .footer .social-links a {
+    margin: 0.5rem 0;
+  }
+}
+
